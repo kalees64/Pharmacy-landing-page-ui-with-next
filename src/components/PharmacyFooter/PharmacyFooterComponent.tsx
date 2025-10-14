@@ -183,7 +183,10 @@ export default function PharmacyFooter() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid md:grid-cols-3 gap-8 items-center">
             {/* Logo Section */}
-            <div className="flex justify-center md:justify-start">
+            <div
+              className="flex justify-center md:justify-start"
+              data-aos="fade-left"
+            >
               <div className="group cursor-pointer">
                 <div className="flex items-center gap-3 transform hover:scale-105 transition">
                   <div className="bg-gradient-to-br from-blue-600 to-green-600 p-3 rounded-2xl shadow-lg">
@@ -202,7 +205,7 @@ export default function PharmacyFooter() {
             </div>
 
             {/* App Download Section */}
-            <div className="text-center">
+            <div className="text-center" data-aos="fade-up">
               <h4 className="text-sm font-bold text-gray-900 mb-3">
                 Get MediCare Plus App on
               </h4>
@@ -255,30 +258,35 @@ export default function PharmacyFooter() {
                 <a
                   href="/"
                   className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition transform hover:scale-110 shadow-lg"
+                  data-aos="zoom-in-right"
                 >
                   <FaFacebook className="w-5 h-5 text-white" fill="white" />
                 </a>
                 <a
                   href="/"
                   className="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition transform hover:scale-110 shadow-lg"
+                  data-aos="zoom-in-right"
                 >
                   <IoLogoTwitter className="w-5 h-5 text-white" fill="white" />
                 </a>
                 <a
                   href="/"
                   className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition transform hover:scale-110 shadow-lg"
+                  data-aos="zoom-in-right"
                 >
                   <FaLinkedin className="w-5 h-5 text-white" fill="white" />
                 </a>
                 <a
                   href="/"
                   className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition transform hover:scale-110 shadow-lg"
+                  data-aos="zoom-in-right"
                 >
                   <FaYoutube className="w-5 h-5 text-white" fill="white" />
                 </a>
                 <a
                   href="/"
                   className="w-10 h-10 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-full flex items-center justify-center hover:opacity-90 transition transform hover:scale-110 shadow-lg"
+                  data-aos="zoom-in-right"
                 >
                   <AiOutlineInstagram className="w-5 h-5 text-white" />
                 </a>
@@ -287,7 +295,10 @@ export default function PharmacyFooter() {
           </div>
 
           {/* Copyright Section */}
-          <div className="mt-8 pt-6 border-t border-gray-200 text-center">
+          <div
+            className="mt-8 pt-6 border-t border-gray-200 text-center"
+            data-aos="fade-up"
+          >
             <p className="text-sm text-gray-600">
               © {new Date().getFullYear()} MediCare Plus Pharmacy. All rights
               reserved. |

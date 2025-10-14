@@ -178,6 +178,8 @@ export default function PharmacyFaqAndContactComponent() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {steps.map((step, idx) => (
               <div
+                data-aos="flip-up"
+                data-aos-delay={`${idx * 100}`}
                 key={step.number}
                 className="relative group animate-slide-up"
                 style={{ animationDelay: `${idx * 0.1}s` }}
@@ -207,6 +209,8 @@ export default function PharmacyFaqAndContactComponent() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {features.map((feature, idx) => (
               <div
+                data-aos="fade-down"
+                data-aos-delay={`${idx * 100}`}
                 key={feature.title}
                 className={`${feature.bgColor} rounded-2xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in border border-gray-200`}
                 style={{ animationDelay: `${idx * 0.1}s` }}
@@ -229,6 +233,8 @@ export default function PharmacyFaqAndContactComponent() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
               {stats.map((stat, idx) => (
                 <div
+                  data-aos="zoom-out-left"
+                  data-aos-delay={`${idx * 100}`}
                   key={stat.label}
                   className="transform hover:scale-110 transition-transform"
                 >
@@ -258,7 +264,10 @@ export default function PharmacyFaqAndContactComponent() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group">
+            <div
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group"
+              data-aos="fade-right"
+            >
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-blue-500 to-cyan-500 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition">
                   <Shield className="w-6 h-6 text-white" />
@@ -276,7 +285,10 @@ export default function PharmacyFaqAndContactComponent() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group">
+            <div
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group"
+              data-aos="fade-left"
+            >
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-green-500 to-emerald-500 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition">
                   <Clock className="w-6 h-6 text-white" />
@@ -294,7 +306,10 @@ export default function PharmacyFaqAndContactComponent() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group">
+            <div
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group"
+              data-aos="fade-right"
+            >
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-purple-500 to-pink-500 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition">
                   <Heart className="w-6 h-6 text-white" />
@@ -312,7 +327,10 @@ export default function PharmacyFaqAndContactComponent() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group">
+            <div
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group"
+              data-aos="fade-left"
+            >
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-orange-500 to-red-500 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition">
                   <Users className="w-6 h-6 text-white" />
@@ -351,7 +369,7 @@ export default function PharmacyFaqAndContactComponent() {
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
               <div
-                data-aos="zoom-out"
+                data-aos="flip-out"
                 data-aos-delay={`${idx * 100}`}
                 key={faq.question}
                 className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden animate-fade-in"
@@ -407,7 +425,6 @@ export default function PharmacyFaqAndContactComponent() {
             {/* Contact Cards */}
             <div
               className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl p-8 text-white shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 animate-fade-in"
-              style={{ animationDelay: "0s" }}
               data-aos="zoom-in-left"
               data-aos-delay="100"
             >
@@ -428,7 +445,6 @@ export default function PharmacyFaqAndContactComponent() {
 
             <div
               className="bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl p-8 text-white shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 animate-fade-in"
-              style={{ animationDelay: "0.1s" }}
               data-aos="zoom-in-up"
               data-aos-delay="100"
             >
@@ -449,7 +465,6 @@ export default function PharmacyFaqAndContactComponent() {
 
             <div
               className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-8 text-white shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 animate-fade-in"
-              style={{ animationDelay: "0.2s" }}
               data-aos="zoom-in-right"
               data-aos-delay="100"
             >

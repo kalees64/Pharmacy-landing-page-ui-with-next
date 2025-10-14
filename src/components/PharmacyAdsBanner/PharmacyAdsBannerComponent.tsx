@@ -72,7 +72,6 @@ export default function PharmacyAdsBannerComponent() {
         return (
           <div
             className={`relative h-full bg-gradient-to-r ${banner.gradient} rounded-3xl overflow-hidden`}
-            data-aos="zoom-in-left"
           >
             {/* Animated Background */}
             <div className="absolute inset-0 opacity-30">
@@ -406,14 +405,15 @@ export default function PharmacyAdsBannerComponent() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+      data-aos="zoom-in"
+    >
       <div className="relative">
         {/* Carousel Container */}
         <div className="relative h-96 md:h-[450px] rounded-3xl overflow-hidden shadow-2xl">
           {banners.map((banner, index) => (
             <div
-              data-aos="fade-up"
-              data-aos-delay={`${index * 100}`}
               key={banner.id}
               className={`absolute inset-0 transition-all duration-700 ease-in-out ${
                 index === currentSlide
